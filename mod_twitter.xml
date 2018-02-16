@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+  <name>MOD_TWITTER</name>
+	<author>SPEDI srl</author>
+	<creationDate>Febbraio 2018</creationDate>
+	<copyright>Copyright (C) SPEDI srl.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>sviluppo@spedi.it</authorEmail>
+	<authorUrl>http://www.spedi.it</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_TWITTER_DESC</description>
+    <files>
+      <filename>mod_twitter.xml</filename>
+      <filename module="mod_twitter">mod_twitter.php</filename>
+      <filename>index.html</filename>
+      <folder>tmpl</folder>
+      <folder>language</folder>
+    </files>
+    <config>
+      <fields name="params">
+          <fieldset name="basic">
+            <field
+              name="jquery"
+              type="radio"
+              label="MOD_TWITTER_JQUERY"
+              description="MOD_TWITTER_JQUERY_DESC"
+              class="btn-group btn-group-yesno"
+              default="1"
+              >
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+            </field>
+
+            <field
+              name="oauth_access_token"
+              type="text"
+              label="MOD_TWITTER_ACCESSTOKEN"
+              description="MOD_TWITTER_ACCESSTOKEN_DESC"
+            />
+
+            <field
+              name="oauth_access_token_secret"
+              type="text"
+              label="MOD_TWITTER_ACCESSTOKENSECRET"
+              description="MOD_TWITTER_ACCESSTOKENSECRET_DESC"
+            />
+
+            <field
+              name="consumer_key"
+              type="text"
+              label="MOD_TWITTER_CONSUMERKEY"
+              description="MOD_TWITTER_CONSUMERKEY_DESC"
+            />
+
+            <field
+              name="consumer_secret"
+              type="text"
+              label="MOD_TWITTER_CONSUMERSECRET"
+              description="MOD_TWITTER_CONSUMERSECRET_DESC"
+            />
+
+          </fieldset>
+      </fields>
+    </config>
+</extension>
